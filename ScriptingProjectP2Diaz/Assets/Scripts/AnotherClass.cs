@@ -4,25 +4,32 @@ using UnityEngine;
 
 public class AnotherClass : MonoBehaviour
 {
-    public int stapler;
+    public int apples;
     private int bananas;
 
 
-    private readonly Sampler;
+    private int stapler;
     private int sellotape;
 
 
-    public void FruitMachine(int a, int b);
-    // Start is called before the first frame update
-    void Start()
+    public void FruitMachine(int a, int b)
     {
-        
+        int answer;
+        answer = a + b;
+        Debug.Log("Fruit total: " + answer);
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void OfficeSort(int a, int b)
     {
-         
+        int answer;
+        answer = a + b;
+        Debug.Log("Office Supplies total: " + answer);
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }
-Debug.Log("""Office Supplies total: """ + (int)(a + b));
